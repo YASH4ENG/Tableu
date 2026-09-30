@@ -45,6 +45,7 @@ public class ClaimController {
                 response.setContentType("application/json");
                 response.getWriter().write("{\"error\":\"Error occurred while processing justification file for claim ID: " + claimid + "\"}");
             } catch (IOException innerEx) {
+                cxx
                 // handle exception
             }
         }
